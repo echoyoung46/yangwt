@@ -1,0 +1,111 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+	display: block;
+}
+
+nav{
+	background: #242830;
+	margin-top: -1px;
+}
+
+nav  ul{
+	list-style: none;
+}
+
+nav ul li{
+	
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a{
+	padding: 20px;
+	display: block;
+	color: rgba(255, 255, 255, 0.6);
+	position: relative;
+	padding-left: 0;
+}
+
+.pull{
+	display: none;
+}
+
+.indicator{
+	position: absolute;
+	right: 0 !important;
+}
+
+.hero{
+	background: url(../image/bg.jpg) no-repeat center center;
+	background-size: cover; 
+	height: auto;
+	padding: 65px 0 700px 0;
+}
+
+.navicon{
+	position: relative;
+	height: 26px;
+}
+
+#nav-toggle{
+	position: absolute;
+	right: 15px;
+	top: 0;
+	cursor: pointer;
+	padding: 10px 35px 16px 0;
+}
+
+#nav-toggle span,#nav-toggle span:before,#nav-toggle span:after{
+	cursor: pointer;
+	height: 5px;
+	width: 35px;
+	background: #353535;
+	position: absolute;
+	display: block;
+	content: '';
+	border-radius: 1px; 
+	-moz-border-radius: 1px; 
+	-webkit-border-radius: 1px; 
+	-o-border-radius: 1px;
+	transition: all 500ms ease-in-out; 
+	-webkit-transition: all 500ms ease-in-out; 
+	-moz-transition: all 500ms ease-in-out; 
+	-o-transition: all 500ms ease-in-out;
+}
+
+#nav-toggle span:before{ top: -10px; }
+
+#nav-toggle span:after{ bottom: -10px; }
+
+#nav-toggle.active span{ background-color: transparent; }
+#nav-toggle.active span:before, #nav-toggle.active span:after{ top: 0; }
+
+#nav-toggle.active span:before { 
+	transform: rotate(45deg); 
+	-webkit-transform: rotate(45deg); 
+	-ms-transform: rotate(45deg); 
+}
+#nav-toggle.active span:after { 
+	transform: translateY(-10px) rotate(-45deg); 
+	-webkit-transform: translateY(-10px) rotate(-45deg); 
+	-ms-transform: translateY(-10px) rotate(-45deg); 
+	top: 10px; 
+}
+
+#selfInfo {position: relative; height: 300px;/* left: 26%; */}
+#avatar {position: absolute;width: 30%;display: block;left: 31%;}
+#selfInfo_detail {position: absolute; bottom: 0;left: 34%;}
+
+
+#experience_view {position: relative; width: 100%; height: 500px;}
+#experience_img {position: relative; width: 100%; height: 70%;}
+#experience_thumb {position: absolute; width: 100%; height: 19%;top: 70%;}
+#experience_thumb ul {width: 100%; height: 100%;}
+#experience_thumb ul li {height: 100%;margin-right: 10px;}
+#experience_thumb ul li.select {border: 2px solid rgb(34, 165, 245);}
+#experience_thumb ul li img {max-width: 120px; max-height: 90px;width: 100%;height: 100%;}
+#experience_img img {max-height: 332px; max-width: 472px;width: 70%;height: 93%;}
+
+.experience_arrow {width: 2%; height: 95%;position: absolute;top: 0;}
+.experience_arrow:hover {background-color: #969696;}
+.experience_arrow span {position: absolute; top: 50%;left: 1px;}
+.experience_arrow_left {left: 89px;}
+.experience_arrow_right {right: 89px;} 

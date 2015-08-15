@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/index.css">
+   <title>我的简历</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/common.css" rel="stylesheet">
+   <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-	hello Tencent.
-<script src="js/jquery.min.js"></script>	
+
+   <header id="home">
+      <nav>
+         <div class="container-fluid">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+               <nav class="pull">
+                  <ul class="top-nav">
+                     <li><a href="#experience">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#responsive">Responsive Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#portfolio">Portfolio <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#team">Team <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#contact">Get in Touch <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+               </nav>
+            </div>
+         </div>
+      </nav>
+      <section class="hero" id="hero">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+               </div>
+           </div>
+           <div class="row">
+           		<div class="col-md-6 col-md-offset-3" id="selfInfo">
+       				<img id="avatar" class="round" src = "image/avatar.jpg"></img>
+       				<div id="selfInfo_detail">
+	       				<p class="h1 text-center">杨文婷</p>
+	       				<p class="h3 text-center">前端工程师</p>
+       				</div>
+           		</div>
+           </div>
+         </div>
+      </section>
+   </header>
+   <section class="experience" id="experience">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2 wp1">
+               <h1 class="arrow">项目经验</h1>
+               <div id="experience_view">
+               	<div id="experience_img" class="text-center">
+	               	<div class="experience_arrow experience_arrow_left">
+               			<span class="glyphicon glyphicon-menu-left"></span>
+	               	</div>
+               		<img src="image/avatar.jpg">
+               		<div class="experience_arrow experience_arrow_right">
+               			<span class="glyphicon glyphicon-menu-right"></span>
+               		</div>
+               	</div>
+               	<div id="experience_thumb">
+               		<ul>
+               			<li><img src="image/avatar.jpg"></li>
+               			<li><img src="image/avatar.jpg"></li>
+               			<li><img src="image/avatar.jpg"></li>
+               			<li><img src="image/avatar.jpg"></li>
+               			<li><img src="image/avatar.jpg"></li>
+               		</ul>
+               	</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>  
 </body>
 </html>
