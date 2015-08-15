@@ -1,3 +1,8 @@
 .round {border-radius: 50%}
- ul {list-style: none;}
- ul li {float: left;}
+.h1 {text-shadow: 1px 2px #22c3aa,2px 4px #aee2d9; font-weight: bold; font-size: 4.25em;font-family: '黑体';margin-bottom: 20px;}
+.h3 {font-weight: bold;font-family: '黑体';}
+.h4 {opacity: 0.7;font-family: '微软雅黑';}
+.color1 {color: #fff;}
+.color2 {color: #008080;}
+.bg1{background: #008080;};
+.bg2{background: #fff;};

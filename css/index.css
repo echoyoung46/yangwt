@@ -3,7 +3,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 nav{
-	background: #242830;
+	background: #333;
 	margin-top: -1px;
 }
 
@@ -32,12 +32,12 @@ nav ul li a{
 	position: absolute;
 	right: 0 !important;
 }
-
+header {height: 500px;}
 .hero{
-	background: url(../image/bg.jpg) no-repeat center center;
+	/* background: url(../image/bg.jpg) no-repeat center center; */
 	background-size: cover; 
-	height: auto;
-	padding: 65px 0 700px 0;
+	height: 100%;
+	/* padding: 65px 0 614px 0; */
 }
 
 .navicon{
@@ -90,22 +90,36 @@ nav ul li a{
 	top: 10px; 
 }
 
-#selfInfo {position: relative; height: 300px;/* left: 26%; */}
-#avatar {position: absolute;width: 30%;display: block;left: 31%;}
-#selfInfo_detail {position: absolute; bottom: 0;left: 34%;}
+#selfInfo {position: relative; height: 300px;}
+#avatar {position: absolute;width: 35%;height: 85%;display: block;left: 31%;}
+#selfInfo_detail {position: absolute; bottom: 0;left: 27%;top: 251px;}
 
+#education,#job,#experience,#skill {height: 450px; padding-top: 34px; padding-bottom: 30px;}
+#experience{height: 688px;}
 
-#experience_view {position: relative; width: 100%; height: 500px;}
-#experience_img {position: relative; width: 100%; height: 70%;}
-#experience_thumb {position: absolute; width: 100%; height: 19%;top: 70%;}
-#experience_thumb ul {width: 100%; height: 100%;}
-#experience_thumb ul li {height: 100%;margin-right: 10px;}
+#experience_view {position: absolute; width: 100%; height: 500px;}
+#experience_img {position: absolute; width: 100%; height: 70%;}
+#experience_thumb {position: absolute; width: 83%; height: 19%;top: 70%;left: 10%;overflow: hidden;}
+#experience_thumb ul {width: 200%; height: 100%;position: absolute;left: 0; list-style: none;}
+#experience_thumb ul li {height: 100%; position: absolute; transition: all 200ms ease; float: left;}
 #experience_thumb ul li.select {border: 2px solid rgb(34, 165, 245);}
 #experience_thumb ul li img {max-width: 120px; max-height: 90px;width: 100%;height: 100%;}
 #experience_img img {max-height: 332px; max-width: 472px;width: 70%;height: 93%;}
 
-.experience_arrow {width: 2%; height: 95%;position: absolute;top: 0;}
-.experience_arrow:hover {background-color: #969696;}
-.experience_arrow span {position: absolute; top: 50%;left: 1px;}
+.experience_arrow {width: 6%; height: 12%;position: absolute;top: 133px;background: #33C3C3;color: #fff;}
+/*.experience_arrow:hover {background-color: #969696;}*/
+.experience_arrow span {position: absolute; top: 36%;left: 16px;}
 .experience_arrow_left {left: 89px;}
 .experience_arrow_right {right: 89px;} 
+.experience_arrow:hover {transition: all 300ms ease-in-out; transform: scale(1.1);-o-transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1);}
+
+/*
+技能
+ */
+.team-wrapper {margin: 70px 0 0;}
+ul.slider. li {margin-bottom: 20px;}
+.social {margin-top: 25px;}
+ul.social-button {list-style: none; margin: 0; padding: 0;}
+.social-btn {width: 40px; height: 40px; border-radius: 50%; -webkit-border-redius: 50%; -o-border-redius: 50%; -moz-border-redius: 50%; background: #333; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center;}
+.fa {display: inline-block; font-family: FontAwesome; font-style: normal; line-height: 1; -webkit-font-smoothing: antialiased;}
+.fa-dribbble:before {content: "\f17d";}

@@ -6,6 +6,7 @@
    <link href="css/bootstrap.min.css" rel="stylesheet">
    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
    <link href="css/common.css" rel="stylesheet">
+   <link href="css/flexslider.css" rel="stylesheet">
    <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
@@ -26,7 +27,7 @@
             </div>
          </div>
       </nav>
-      <section class="hero" id="hero">
+      <section class="hero bg1" id="hero">
          <div class="container">
             <div class="row">
                <div class="col-md-12 text-right navicon">
@@ -34,10 +35,11 @@
                </div>
            </div>
            <div class="row">
-           		<div class="col-md-6 col-md-offset-3" id="selfInfo">
+           		<div class="col-md-6 col-md-offset-3 color1" id="selfInfo">
        				<img id="avatar" class="round" src = "image/avatar.jpg"></img>
        				<div id="selfInfo_detail">
 	       				<p class="h1 text-center">杨文婷</p>
+	       				<p class="h4 text-center">知书达理，知恩图报，知足常乐</p>
 	       				<p class="h3 text-center">前端工程师</p>
        				</div>
            		</div>
@@ -45,28 +47,51 @@
          </div>
       </section>
    </header>
-   <section class="experience" id="experience">
+   <section class="education bg2" id="education">
       <div class="container">
          <div class="row">
-            <div class="col-md-8 col-md-offset-2 wp1">
-               <h1 class="arrow">项目经验</h1>
+            <div class="col-md-8 col-md-offset-2 wp1 color2">
+               <p class="arrow h1 text-center">教育背景</p>
+               <p class="h3 text-center">中南财经政法大学 本科</p>
+               <p class="h4 text-center">电子商务（技术方向）专业</p>
+               <p class="h3 text-center">武汉大学 辅修</p>
+               <p class="h4 text-center">会计学专业</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="job bg1" id="job">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2 wp1 color1">
+               <p class="arrow h1 text-center">工作经验</p>
+               <p class="h3 text-center">深圳市茁壮网络股份有限公司</p>
+               <p class="h4 text-center">2014年7月至今</p>
+               <p class="h3 text-center">Web开发工程师</p>
+               <p class="h4 text-center">开发和维护pc端后台管理系统以及机顶盒终端页面</p>
+               <p class="h4 text-center">相关技术：HTML、CSS、JavaScript、jQuery、PHP</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="experience bg2" id="experience">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2 wp1 color2">
+               <p class="arrow h1 text-center">作品展示</p>
                <div id="experience_view">
                	<div id="experience_img" class="text-center">
 	               	<div class="experience_arrow experience_arrow_left">
                			<span class="glyphicon glyphicon-menu-left"></span>
 	               	</div>
-               		<img src="image/avatar.jpg">
+               		<img id="experience_url" src="">
                		<div class="experience_arrow experience_arrow_right">
                			<span class="glyphicon glyphicon-menu-right"></span>
                		</div>
                	</div>
                	<div id="experience_thumb">
                		<ul>
-               			<li><img src="image/avatar.jpg"></li>
-               			<li><img src="image/avatar.jpg"></li>
-               			<li><img src="image/avatar.jpg"></li>
-               			<li><img src="image/avatar.jpg"></li>
-               			<li><img src="image/avatar.jpg"></li>
+               			
                		</ul>
                	</div>
                </div>
@@ -74,9 +99,49 @@
          </div>
       </div>
    </section>
+   <section class="skill bg1" id="skill">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2 wp1 color1">
+               <p class="arrow h1 text-center">技能</p>
+               <div class="team-wrapper">
+                <div id="teamSlider">
+                  <ul class="slides">
+                    <li>
+                      <div class="col-md-4 wp5">
+                        <canvas id="myHTML" width="200" height="200"></canvas>
+                      </div>
+                      <div class="col-md-4 wp5 delay-1s">
+                        <canvas id="myCSS" width="200" height="200"></canvas>
+                      </div>
+                      <div class="col-md-4 wp5 delay-05s">
+                      	<canvas id="myJS" width="200" height="200"></canvas>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-4 wp5">
+                        <canvas id="myJQ" width="200" height="200"></canvas>
+                      </div>
+                      <div class="col-md-4 wp5 delay-05s">
+                        <canvas id="myPHP" width="200" height="200"></canvas>
+                      </div>
+                      <!-- <div class="col-md-4 wp5 delay-1s">
+                        <canvas id="mySkills" width="200" height="200"></canvas>
+                      </div> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/viewlist.js"></script>  
 <script src="js/index.js"></script>  
 </body>
 </html>
