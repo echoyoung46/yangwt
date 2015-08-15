@@ -94,7 +94,7 @@ header {height: 500px;}
 #avatar {position: absolute;width: 35%;height: 85%;display: block;left: 31%;}
 #selfInfo_detail {position: absolute; bottom: 0;left: 27%;top: 251px;}
 
-#education,#job,#experience,#skill {height: 450px; padding-top: 34px; padding-bottom: 30px;}
+#education,#job,#experience,#skill,#more {height: 500px; padding-top: 34px; padding-bottom: 30px;}
 #experience{height: 688px;}
 
 #experience_view {position: absolute; width: 100%; height: 500px;}
@@ -123,3 +123,16 @@ ul.social-button {list-style: none; margin: 0; padding: 0;}
 .social-btn {width: 40px; height: 40px; border-radius: 50%; -webkit-border-redius: 50%; -o-border-redius: 50%; -moz-border-redius: 50%; background: #333; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center;}
 .fa {display: inline-block; font-family: FontAwesome; font-style: normal; line-height: 1; -webkit-font-smoothing: antialiased;}
 .fa-dribbble:before {content: "\f17d";}
+
+/*
+更多
+ */
+#more ul {list-style: none;height: 45px;width: 50%;position: absolute;left: 252px;}
+#more ul li {float: left;width: 40px;height: 40px;background: #008080;margin: 0 5px;border-radius: 50%;transition: all 500ms ease-in-out;}
+#more ul li:hover {border-radius: 20%;}
+.social_share {width: 40px; height: 40px; /* border-radius: 50%; */ display: inline-block;}
+.social_github {background: url(../image/icon.png) no-repeat -160px -40px;}
+.social_blog {background: url(../image/icon.png) no-repeat -200px 0px;}
+.social_zhihu {background: url(../image/icon.png) no-repeat -68px -1px;}
+.social_sina {background: url(../image/icon.png) no-repeat -159px 0px;}
+.social_douban {background: url(../image/icon.png) no-repeat -40px -40px;}
