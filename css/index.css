@@ -22,6 +22,7 @@ nav ul li a{
 	color: rgba(255, 255, 255, 0.6);
 	position: relative;
 	padding-left: 0;
+	font-weight: bold;
 }
 
 .pull{
@@ -32,11 +33,11 @@ nav ul li a{
 	position: absolute;
 	right: 0 !important;
 }
-header {height: 500px;}
+header {/* height: 500px; */}
 .hero{
 	/* background: url(../image/bg.jpg) no-repeat center center; */
 	background-size: cover; 
-	height: 100%;
+	height: auto;
 	/* padding: 65px 0 614px 0; */
 }
 
@@ -48,7 +49,7 @@ header {height: 500px;}
 #nav-toggle{
 	position: absolute;
 	right: 15px;
-	top: 0;
+	top: 21px;
 	cursor: pointer;
 	padding: 10px 35px 16px 0;
 }
@@ -90,11 +91,11 @@ header {height: 500px;}
 	top: 10px; 
 }
 
-#selfInfo {position: relative; height: 300px;}
-#avatar {position: absolute;width: 35%;height: 85%;display: block;left: 31%;}
-#selfInfo_detail {position: absolute; bottom: 0;left: 27%;top: 251px;}
+#selfInfo {position: relative; height: 617px;}
+#avatar {position: absolute;width: 35%;height: 43%;display: block;left: 31%;top: 62px;}
+#selfInfo_detail {position: absolute; bottom: 0;left: 23%;top: 329px;}
 
-#education,#job,#experience,#skill,#more {height: 500px; padding-top: 34px; padding-bottom: 30px;}
+#education,#job,#experience,#skill,#more {height: 642px; padding-top: 34px; padding-bottom: 30px;}
 #experience{height: 688px;}
 
 #experience_view {position: absolute; width: 100%; height: 500px;}
@@ -102,11 +103,11 @@ header {height: 500px;}
 #experience_thumb {position: absolute; width: 83%; height: 19%;top: 70%;left: 10%;overflow: hidden;}
 #experience_thumb ul {width: 200%; height: 100%;position: absolute;left: 0; list-style: none;}
 #experience_thumb ul li {height: 100%; position: absolute; transition: all 200ms ease; float: left;}
-#experience_thumb ul li.select {border: 2px solid rgb(34, 165, 245);}
+#experience_thumb ul li.select {border: 2px solid #008080;}
 #experience_thumb ul li img {max-width: 120px; max-height: 90px;width: 100%;height: 100%;}
 #experience_img img {max-height: 332px; max-width: 472px;width: 70%;height: 93%;}
 
-.experience_arrow {width: 6%; height: 12%;position: absolute;top: 133px;background: #33C3C3;color: #fff;}
+.experience_arrow {width: 6%; height: 12%;position: absolute;top: 133px;background: #008080;opacity: 0.9;color: #fff;}
 /*.experience_arrow:hover {background-color: #969696;}*/
 .experience_arrow span {position: absolute; top: 36%;left: 16px;}
 .experience_arrow_left {left: 89px;}
@@ -114,9 +115,9 @@ header {height: 500px;}
 .experience_arrow:hover {transition: all 300ms ease-in-out; transform: scale(1.1);-o-transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1);}
 
 /*
-技能
+ÃƒÂ¦Ã…Â Ã¢â€šÂ¬ÃƒÂ¨Ã†â€™Ã‚Â½
  */
-.team-wrapper {margin: 70px 0 0;}
+.team-wrapper {margin: 70px 0 0 12px;}
 ul.slider. li {margin-bottom: 20px;}
 .social {margin-top: 25px;}
 ul.social-button {list-style: none; margin: 0; padding: 0;}
@@ -125,7 +126,7 @@ ul.social-button {list-style: none; margin: 0; padding: 0;}
 .fa-dribbble:before {content: "\f17d";}
 
 /*
-更多
+äº†è§£æ›´å¤š
  */
 #more ul {list-style: none;height: 45px;width: 50%;position: absolute;left: 252px;}
 #more ul li {float: left;width: 40px;height: 40px;background: #008080;margin: 0 5px;border-radius: 50%;transition: all 500ms ease-in-out;}
@@ -136,3 +137,4 @@ ul.social-button {list-style: none; margin: 0; padding: 0;}
 .social_zhihu {background: url(../image/icon.png) no-repeat -68px -1px;}
 .social_sina {background: url(../image/icon.png) no-repeat -159px 0px;}
 .social_douban {background: url(../image/icon.png) no-repeat -40px -40px;}
+.up-btn { width: 50px; height: 50px; border-radius: 50%; background: #008080; display: block; margin: 0 auto; color: #fff; font-size: 18px; line-height: 46px; text-align: center; margin-top: -60px; /* position: absolute; */ /* top: -26px; */ /* left: 0; */ /* right: 0; */ margin-left: auto;}

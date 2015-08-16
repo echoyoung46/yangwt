@@ -8,47 +8,39 @@ function Viewlist(_param) {
 	this.showCount = _param.count;	//显示出来的条目数量
 	this.distance = _param.distance;	//左移距离
 
-	var maxLeft = this.distance * (this.listArr.length - 2),
-		keyFlag = true;	//click事件是否响应
+	var keyFlag = true,	//click事件是否响应
+		focusPos = 0, 	//焦点所在位置
+		listLength = this.listArr.length;
 
 	//初始化
 	this.init = function() {
-		$(this.thumb_container).find("li").eq(this.pos).addClass('select');
-
-		var imgUrl = $(this.thumb_container).find("img").eq(this.pos).attr("src");
-		$(this.container).attr("src", imgUrl);
-
+		//焦点绑定到起始位置
+		this.moveFocus(this.pos);
 	}
 	//焦点移动
 	this.moveFocus = function( _num ) {
-		if( keyFlag == false ) {
-			console.log("false");
-			return;
-		}
-		keyFlag == false;
 		var distance = this.distance;
-		if( this.pos + _num < 0 ){
-			this.pos = 0;
-		}else if( this.pos + _num >= this.showCount ) {
-			this.pos += _num;
-			$(this.thumb_container).find("li").each(function(i, ele) {
-				var currLeft = parseInt($(ele).css("left"));
-				var moveLeft = currLeft - distance;
-				if( moveLeft < -130 ){
-					moveLeft = maxLeft;
-					console.log(moveLeft);
-				}
-				$(ele).css("left", moveLeft + "px");
-			});
-		}else{
-			this.pos += _num;
+		if( this.pos + _num < 0 || this.pos + _num >= listLength ) {
+			return;
+		}else {
+			if( this.pos + _num >= this.showCount && _num > 0 || focusPos + _num < 0 && this.pos + _num >= 0 ){
+				//焦点超过显示区域开始滑动
+				this.pos += _num;
+				//遍历滑动每个缩略图
+				$(this.thumb_container).find("li").each(function(i, ele) {
+					var currLeft = parseInt($(ele).css("left"));
+					var moveLeft = currLeft - distance * _num;
+					$(ele).css("left", moveLeft + "px");
+				});
+			}else {
+				this.pos += _num;
+				focusPos += _num;
+			}
 		}
-		console.log(this.pos);
+
+		//获取焦点，大图显示缩略图
 		$(this.thumb_container).find("li").eq(this.pos).addClass('select').siblings().removeClass('select');
 		var imgUrl = $(this.thumb_container).find("img").eq(this.pos).attr("src");
 		$(this.container).attr("src", imgUrl);
-		setTimeout(function(){
-			keyFlag = true;
-		},2000);
 	}
 }

@@ -8,21 +8,21 @@
    <link href="css/common.css" rel="stylesheet">
    <link href="css/flexslider.css" rel="stylesheet">
    <link href="css/index.css" rel="stylesheet">
+   <link href="css/animate.css" rel="stylesheet">
 </head>
-<body>
-
-   <header id="home">
+<body id="top"> 
+   	<header id="home">
       <nav>
          <div class="container-fluid">
             <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
                <nav class="pull">
                   <ul class="top-nav">
-                     <li><a href="#experience">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                     <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                     <li><a href="#responsive">Responsive Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                     <li><a href="#portfolio">Portfolio <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                     <li><a href="#team">Team <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                     <li><a href="#contact">Get in Touch <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <!-- <li><a href="#hero">个人信息 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li> -->
+                     <li><a href="#education">教育背景 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#job">工作经验 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#experience">作品展示 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#skill">技能 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                     <li><a href="#more">了解更多 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
                </nav>
             </div>
          </div>
@@ -108,14 +108,14 @@
                 <div id="teamSlider">
                   <ul class="slides">
                     <li>
+                      <div class="col-md-4 wp5 delay-05s">
+                      	<canvas id="myJS" width="200" height="200"></canvas>
+                      </div>
                       <div class="col-md-4 wp5">
                         <canvas id="myHTML" width="200" height="200"></canvas>
                       </div>
                       <div class="col-md-4 wp5 delay-1s">
                         <canvas id="myCSS" width="200" height="200"></canvas>
-                      </div>
-                      <div class="col-md-4 wp5 delay-05s">
-                      	<canvas id="myJS" width="200" height="200"></canvas>
                       </div>
                     </li>
                     <li>
@@ -137,13 +137,15 @@
       </div>
    </section>
    <section class="more bg2" id="more">
+		<a class="up-btn" href="#top">
+			<i class="fa fa-chevron-up"></i>
+		</a>
       <div class="container">
          <div class="row">
             <div class="col-md-8 col-md-offset-2 wp1 color2">
                <p class="arrow h1 text-center">了解更多</p>
-               <p class="h3 text-center">中南财经政法大学 本科</p>
                <p class="h4 text-center">Email: <a class="color2" href="mailto:yangwt46@163.com">yangwt46@163.com</a></p>
-               <p class="h2 text-center color3">下载简历</p>
+               <p class="h2 text-center"><a class="color3" href="resume.pdf">下载简历</a></p>
                <p class="h4 text-center" id="social">
 					<ul>
 						<li><a class="social_share social_github" href="https://github.com/echoyoung46"></a></li>
