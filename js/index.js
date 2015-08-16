@@ -107,7 +107,8 @@ function drawGraph() {
 		{"dom":"myCSS", "num":"70", "name":"CSS3"},
 		{"dom":"myJS", "num":"80", "name":"JavaScript"},
 		{"dom":"myJQ", "num":"70", "name":"jQuery"},
-		{"dom":"myPHP", "num":"50", "name":"PHP"}
+		{"dom":"myPHP", "num":"50", "name":"PHP"},
+		{"dom":"myJSP", "num":"40", "name":"JSP"}
 	];
 	$.each(graphObj, function(i, val) {
 		drawCircle(val.dom, val.num, val.name);
