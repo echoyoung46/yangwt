@@ -92,7 +92,7 @@ header {/* height: 500px; */}
 }
 
 #selfInfo {position: relative; height: 617px;}
-#avatar {position: absolute;width: 39%;height: 43%;display: block;left: 31%;top: 62px;}
+#avatar {position: absolute;width: 36%;height: 43%;display: block;left: 31%;top: 62px;}
 #selfInfo_detail {position: absolute; bottom: 0;left: 23%;top: 329px;}
 
 #education,#job,#experience,#skill,#more {height: 642px; padding-top: 34px; padding-bottom: 30px;}
