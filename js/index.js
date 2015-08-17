@@ -44,7 +44,7 @@ function initAction() {
  * @return {[type]} [description]
  */
 function createList() {
-	var imgArr = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "1.jpg", "2.jpg"];
+	var imgArr = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
 	var html = '';
 	var distance = 130;	//缩略图间距
 	var left = 0;	//起始位置
